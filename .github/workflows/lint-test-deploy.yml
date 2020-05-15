@@ -36,4 +36,11 @@ jobs:
     
     steps:
     - name: GitHub Action for Cloudflare Workers
-      uses: cloudflare/serverless-action@v1.1
+      uses: cloudflare/serverless-action@v1.
+      
+      env:
+        CLOUDFLARE_AUTH_EMAIL: ${{ secrets.CLOUDFLARE_AUTH_EMAIL }}
+        CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+        CLOUDFLARE_ZONE_ID: ${{ secrets.CLOUDFLARE_ZONE_ID }}
+        CLOUDFLARE_AUTH_KEY: ${{ secrets.CLOUDFLARE_AUTH_KEY }}
+        CLOUDFLARE_SCRIPT_NAME: worker-script
