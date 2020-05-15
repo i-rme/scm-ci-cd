@@ -10,7 +10,7 @@ test("Valid plates numbers", function (assert) {
     assert.equal(isValidPlate('1111BBB'), true, "Plate with number 1");
     assert.equal(isValidPlate('2222BBB'), true, "Plate with number 2");
     assert.equal(isValidPlate('3333BBB'), true, "Plate with number 3");
-    assert.equal(isValidPlate('4444BBB'), true, "Plate with number 4");
+    assert.equal(isValidPlate('4444BBB'), false, "Plate with number 4");
     assert.equal(isValidPlate('5555BBB'), true, "Plate with number 5");
     assert.equal(isValidPlate('6666BBB'), true, "Plate with number 6");
     assert.equal(isValidPlate('7777BBB'), true, "Plate with number 7");
