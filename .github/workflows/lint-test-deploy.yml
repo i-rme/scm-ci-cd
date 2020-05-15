@@ -32,11 +32,12 @@ jobs:
         echo Add other actions to build,
         echo test, and deploy your project.
   deploy:
+    needs: build
     runs-on: ubuntu-latest
     
     steps:
     - name: GitHub Action for Cloudflare Workers
-      uses: cloudflare/serverless-action@v1.
+      uses: cloudflare/serverless-action@v1.1
       
       env:
         CLOUDFLARE_AUTH_EMAIL: ${{ secrets.CLOUDFLARE_AUTH_EMAIL }}
