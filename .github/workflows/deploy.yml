@@ -21,3 +21,7 @@ jobs:
           CLOUDFLARE_AUTH_KEY: ${{ secrets.CLOUDFLARE_AUTH_KEY }}
           CLOUDFLARE_SCRIPT_NAME: task5-scm-worker
           CLOUDFLARE_ZONE_ID: ${{ secrets.CLOUDFLARE_ZONE_ID }}
+
+
+      - name: Spectral Linting
+        uses: stoplightio/spectral-action@v0.6.1
