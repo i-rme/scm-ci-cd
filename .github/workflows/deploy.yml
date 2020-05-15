@@ -7,6 +7,12 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@master
+      - name: replace env variables
+        run: node .github/actions/replace-env-variables
+        env:
+          CLIENT_ID: ${{ secrets.CLIENT_ID }}
+          CLIENT_SECRET: ${{ secrets.CLIENT_SECRET }}
       - name: deploy
         uses: cloudflare/serverless-action@master
         env:
