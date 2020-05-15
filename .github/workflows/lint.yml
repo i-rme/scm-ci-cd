@@ -7,6 +7,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
+      - uses: actions/setup-node@v1
+        with:
+          node-version: 12
       - run: npm install -g eslint
       - run: npx eslint --init
       - run: npx eslint task5-scm-worker.js
