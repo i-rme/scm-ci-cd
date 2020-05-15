@@ -11,7 +11,5 @@ jobs:
         with:
           node-version: 12
       - run: npm install -g eslint
-      - run: npx eslint --init
-      - run: npx eslint task5-scm-worker.js
       - uses: stefanoeb/eslint-action@1.0.2
 
