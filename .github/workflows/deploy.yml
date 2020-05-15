@@ -13,6 +13,8 @@ jobs:
         env:
           CLIENT_ID: ${{ secrets.CLIENT_ID }}
           CLIENT_SECRET: ${{ secrets.CLIENT_SECRET }}
+      - name: Lint Action
+        uses: samuelmeuli/lint-action@v1.5.2
       - name: deploy
         uses: cloudflare/serverless-action@master
         env:
