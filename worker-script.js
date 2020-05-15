@@ -12,7 +12,7 @@ addEventListener('fetch', event => {
 const someHTML =  `<!DOCTYPE html>
 <html>
   <body>
-  <h1>Hello World</h1>
+  <h1>Hello World2</h1>
   <p>This is all generated using a Worker</p>
   </body>
 </html>
