@@ -1,8 +1,0 @@
-{
-  "name": "scm-ci-cd",
-  "description": "scm-ci-cd",
-  "version": "1",
-  "dependencies": {
-    "eslint-loader": "2.1.2"
-  }
-}
