@@ -1,0 +1,8 @@
+{
+  "name": "scm-ci-cd",
+  "description": "scm-ci-cd",
+  "version": "1",
+  "dependencies": {
+    "prettier": "2.0.5"
+  }
+}
