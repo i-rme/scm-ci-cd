@@ -13,6 +13,20 @@ jobs:
         env:
           CLIENT_ID: ${{ secrets.CLIENT_ID }}
           CLIENT_SECRET: ${{ secrets.CLIENT_SECRET }}
+
+      - name: Spectral Linting
+        uses: stoplightio/spectral-action@v0.6.1
+        with:
+          file_glob: '*.json'
+
+      - name: AutoCheck JavaScript tests by Testomatio
+        uses: testomatio/check-tests@1.0.2
+        with:
+          # Test framework to be used. Supported: mocha, codeceptjs
+          framework: mocha
+          # Glob pattern to match tests in a project, example: tests/**_test.js
+          tests: tests/**_test.js
+
       - name: deploy
         uses: cloudflare/serverless-action@master
         env:
@@ -21,7 +35,3 @@ jobs:
           CLOUDFLARE_AUTH_KEY: ${{ secrets.CLOUDFLARE_AUTH_KEY }}
           CLOUDFLARE_SCRIPT_NAME: task5-scm-worker
           CLOUDFLARE_ZONE_ID: ${{ secrets.CLOUDFLARE_ZONE_ID }}
-
-
-      - name: Spectral Linting
-        uses: stoplightio/spectral-action@v0.6.1
