@@ -44,5 +44,5 @@ jobs:
         CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
         CLOUDFLARE_ZONE_ID: ${{ secrets.CLOUDFLARE_ZONE_ID }}
         CLOUDFLARE_AUTH_KEY: ${{ secrets.CLOUDFLARE_AUTH_KEY }}
-        CLOUDFLARE_SCRIPT_NAME: worker-script
+        CLOUDFLARE_SCRIPT_NAME: worker-script.js
         SLS_DEBUG: "*"
