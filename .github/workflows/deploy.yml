@@ -26,6 +26,9 @@ jobs:
           framework: mocha
           # Glob pattern to match tests in a project, example: tests/**_test.js
           tests: tests/**_test.js
+          
+      - name: test
+        run: npm install --save-dev node-qunit-phantomjs && npm install --save-dev qunit && node_modules/node-qunit-phantomjs/bin/node-qunit-phantomjs test.html
 
       - name: deploy
         uses: cloudflare/serverless-action@master
