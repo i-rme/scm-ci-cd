@@ -20,7 +20,7 @@ jobs:
           file_glob: '{*.json,.github/*.yml}'
 
       - name: test
-        run: npm install --save-dev node-qunit && npm install --save-dev qunit && qunit -c ./task5-scm-worker.js -t ./qunit-tests.js
+        run: npm install --save-dev -g node-qunit && npm install --save-dev qunit && qunit -c ./task5-scm-worker.js -t ./qunit-tests.js
 
       - name: deploy
         uses: cloudflare/serverless-action@master
