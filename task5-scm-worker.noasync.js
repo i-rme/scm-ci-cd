@@ -4,7 +4,7 @@ function handleRequest(request) {
       'content-type': 'text/html;charset=UTF-8',
     },
   }
-  return new bject();
+  return new Object();
 }
 
 const someHTML =  '<html>';
