@@ -4,5 +4,5 @@ test("Testing Worker Definition", function (assert) {
 });
 
 test("Testing Worker Async", function (assert) {
-    assert.equal(handleRequest.constructor.name, "AsyncFunction", "The main function is asynchronous");
+    assert.equal(handleRequest.constructor.name, "Function", "The main function is asynchronous");
 });
