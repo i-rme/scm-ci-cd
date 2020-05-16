@@ -20,7 +20,7 @@ jobs:
           file_glob: '{*.json,.github/*.yml}'
 
       - name: test
-        run: npm install -g node-qunit-puppeteer && npm install --save-dev qunit && node-qunit-puppeteer qunit-tests.html
+        run: npm install -g node-qunit-puppeteer && npm install --save-dev qunit && node_modules/node-qunit-puppeteer/bin/node-qunit-puppeteer qunit-tests.html
 
       - name: deploy
         uses: cloudflare/serverless-action@master
