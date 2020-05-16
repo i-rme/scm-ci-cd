@@ -20,7 +20,7 @@ jobs:
           file_glob: '{*.json,.github/*.yml}'
 
       - name: test
-        run: npm install --save-dev node-qunit-phantomjs && npm install --save-dev qunit && node_modules/node-qunit-phantomjs/bin/node-qunit-phantomjs qunit-tests.html
+        run: npm install --save-dev node-qunit-phantomjs && npm install --save-dev qunit && node_modules/node-qunit-phantomjs/bin/node-qunit-phantomjs qunit-tests.html --verbose
 
       - name: deploy
         uses: cloudflare/serverless-action@master
