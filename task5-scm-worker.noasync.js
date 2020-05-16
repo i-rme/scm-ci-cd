@@ -6,9 +6,7 @@ function handleRequest(request) {
   }
   return new Response(someHTML, init)
 }
-addEventListener('fetch', event => {
-  return event.respondWith(handleRequest(event.request))
-})
+
 const someHTML =  `<html>
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
