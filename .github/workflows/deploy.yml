@@ -17,7 +17,7 @@ jobs:
       - name: Spectral Linting
         uses: stoplightio/spectral-action@v0.6.1
         with:
-          file_glob: '*.json'
+          file_glob: '{*.json,.github/*.yml}'
 
       - name: test
         run: npm install --save-dev node-qunit-phantomjs && npm install --save-dev qunit && node_modules/node-qunit-phantomjs/bin/node-qunit-phantomjs qunit-tests.html
