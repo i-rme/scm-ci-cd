@@ -41,8 +41,8 @@ const someHTML =  `<html>
   
 <div class="siimple-content siimple-content--large">
 
-<div class="siimple-alert siimple-alert--success">
-    Welcome to Task 5 by <a target="_blank" href="https://rme.li">Raúl Martínez</a> 👋
+<div class="siimple-alert siimple-alert--info">
+    Welcome to Task 5 by <a target="_blank" href="https://rme.li">Raúl Martínez</a> 👋👋👋
 </div>
 
   <h2>What is this site?</h2> 
